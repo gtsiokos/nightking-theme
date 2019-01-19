@@ -1,0 +1,104 @@
+.panel {
+  flex: 0 1 auto;
+  height: 100%;
+  background: #fff;
+}
+
+.menuOpen {
+}
+
+.menuLogo {
+  display: inline-block;
+  width: 85rem;
+  height: 70rem;
+  padding: 17rem 0 13rem 0;
+  margin-bottom: 33rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menuLogo img {
+  height: 100%;
+}
+
+.menuList {
+}
+
+.menuListItem,
+.menuListItem {
+  display: inline-block;
+  width: 85rem;
+  height: 67rem;
+  padding: 17rem 13rem 11rem 13rem;
+  margin-bottom: 4rem;
+  font-size: 32rem;
+  text-align: center;
+  color: #323b44;
+  border-left: solid 4rem transparent;
+}
+
+.menuListItem:hover,
+.menuListItem:focus,
+.menuListItemActive {
+  background: #eeeeee;
+  border-color: #3bafda;
+}
+
+.menuListItem:hover {
+  color: #3bafda;
+}
+
+.menuListItem:focus {
+  color: #323b44;
+}
+
+.menuListItemLabel {
+  opacity: 0;
+}
+
+.menuOpen .menuLogo {
+  width: 100%;
+}
+
+.menuOpen .menuSmallLogo {
+  display: none;
+}
+
+.menuOpen .menuFullLogo {
+  display: inline-block;
+}
+
+.menuOpen .menuListItem {
+  width: 180rem;
+}
+
+.menuOpen .menuListItemLabel {
+  opacity: 1;
+}
+
+.submenuContainer {
+  flex: 0 1 0rem;
+  overflow: hidden;
+  transition: flex-basis 250ms;
+}
+
+.submenu {
+  padding: 50rem 17rem 17rem 17rem;
+  user-select: none;
+}
+
+.submenuTitle {
+  display: block;
+  font-size: 23rem;
+  margin-bottom: 17rem;
+}
+
+.submenuTimerange {
+  display: flex;
+  flex-wrap: flex;
+  justify-content: space-evenly;
+}
+
+.submenuTag {
+  composes: listItemIcon from './ui/tag.css';
+}

@@ -1,0 +1,129 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.emptyList {
+  text-align: center;
+  margin-bottom: 7px;
+  padding: 26px 13px;
+  font-size: 100%;
+  color: color(#333 lightness(44%));
+}
+
+.checkbox {
+  composes: checkbox from './form.css';
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  vertical-align: baseline;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.paginationItem {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: color(#333 alpha(55%));
+  line-height: 1;
+  margin-right: 0.4rem;
+  padding-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, color(#333 alpha(17%)) 0%, color(#333 alpha(7%)) 44%, transparent 100%);
+  box-shadow: 0 -0.1rem 0.1rem color(#333 alpha(17%)) inset;
+  transition: all 250ms;
+}
+
+.paginationItemEnabled {
+  cursor: pointer;
+}
+
+.paginationItemEnabled:hover {
+  color: #fcfcfc;
+  background: color(#333 alpha(77%));
+}
+
+.paginationItemActive {
+  color: #fcfcfc;
+  background: color(#30AAEC blackness(15%));
+}
+
+.paginationIcon {
+  color: color(#333 alpha(44%));
+  background: transparent;
+}
+
+.paginationLink {
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+}
+
+.item {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #333;
+  border: 0;
+  border-style: solid;
+  border-color: color(#333 lightness(88%));
+  border-top-width: 0.1rem;
+  border-bottom-width: 0.1rem;
+}
+
+.item:nth-child(even) {
+  border: 0;
+  border-style: solid;
+  border-color: color(#fcfcfc);
+  border-top-width: 0.1rem;
+  background: color(#fcfcfc alpha(44%));
+}
+
+.item:first-child {
+  border-top-width: 0;
+}
+.item:last-child {
+  border-bottom-width: 0;
+}
+
+.itemOverlay {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: color(#30AAEC alpha(14%));
+}
+
+.itemChecked {
+  composes: item;
+}
+
+.itemChecked .itemOverlay {
+  opacity: 1;
+}
+
+.tag {
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+}
+
+.itemEnabled .tag {
+  color: #3DBC78;
+}
+
+.itemDisabled .tag {
+  color: #FF9D29;
+}
+
+.overview {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+}

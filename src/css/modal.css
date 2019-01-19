@@ -1,0 +1,6 @@
+.panel {
+  font-size: 23rem;
+  padding: 13rem 13rem 13rem 13rem;
+  border-radius: 4rem;
+  background: linear-gradient(to bottom, #fcfcfc 0%, #ebebeb 70%, #e3e3e3 100%);
+}

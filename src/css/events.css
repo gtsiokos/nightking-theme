@@ -1,0 +1,198 @@
+.panel {
+  composes: panel from './ui/panel.css';
+}
+
+.panelHeader {
+  composes: panelHeader from './ui/panel.css';
+}
+
+/***********
+ Event List
+***********/
+
+.panelEventList {
+  composes: panelCard from './ui/panel.css';
+  max-width: 584rem;
+  height: calc(100% - 60rem - 17rem);
+}
+
+.panelEventListItem {
+  composes: panelCard from './ui/panel.css';
+  flex: 1.4;
+  height: calc(100% - 60rem -17rem);
+}
+
+.list {
+  flex: 1;
+  font-size: 18rem;
+}
+
+.list > div {
+  overflow-y: auto !important;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rem solid #434f5c;
+  border-bottom: 1rem solid #323b44;
+  padding: 8rem;
+  padding-left: 0;
+  padding-right: 12rem;
+  width: 560rem;
+  cursor: pointer;
+}
+
+.listItem:first-child {
+  border-top: 0;
+}
+
+.listItem:last-child {
+  border-bottom: 0;
+}
+
+.listItemActive {
+  composes: listItem;
+  color: #fff;
+}
+
+.nameBadge,
+.timeBadge,
+.tagBadge,
+.statusBadge {
+  composes: listItem from './ui/tag.css';
+  margin-bottom: 0;
+}
+
+.nameBadge [class^='fa'],
+.timeBadge [class^='fa'],
+.tagBadge [class^='fa'],
+.statusBadge [class^='fa'] {
+  padding: 0;
+  margin-right: 7rem;
+}
+
+.nameBadge,
+.timeBadge {
+  color: inherit;
+  background: transparent !important;
+}
+
+.tagBadge,
+.statusBadge {
+  color: inherit;
+  background: #323b44 !important;
+}
+
+.statusBadge[data-status="UPCOMING"],
+.statusBadge[data-status="INPROGRESS"],
+.statusBadge[data-status="ENDED"] {
+  //background: #fcfcfc;
+}
+
+.listItem {
+  flex: 1;
+}
+
+.listItemCover {
+  flex: 1;
+  height: 220rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 26rem;
+}
+
+.listItemCover img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.listItemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.1;
+  margin-bottom: 26rem;
+}
+
+.listItemDate {
+  flex: 0.1;
+  display: flex;
+  font-size: 21rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.listItemDate span:nth-child(1) {
+  
+}
+
+.listItemDate span:nth-child(2) {
+  color: #fcfcfc;
+  font-size: 33rem;
+  font-weight: 600;
+}
+
+.listItemTitle {
+  flex: 0.9;
+  display: flex;
+  font-size: 28rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.listItemDesc {
+  line-height: 1.1;
+  white-space: pre-line;
+}
+
+
+.listItemDetails {
+  flex: 1;
+  font-size: 18rem;
+  margin-bottom: 26rem;
+}
+
+.listItemDetailsItem {
+  display: flex;
+  border-top: 1rem solid #434f5c;
+  border-bottom: 1rem solid #323b44;
+  padding: 8rem;
+  line-height: 1;
+  //justify-content: space-between;
+}
+
+.listItemDetailsItem span {
+  flex: 1;
+}
+
+.listItemDetailsItem span:first-child {
+  flex: 0.04;
+}
+
+.listItemDetailsItem span:first-child [class^='fa'] {
+  width: 20rem;
+  text-align: center;
+}
+
+.listItemDetailsItem:first-child {
+  border-top: 0;
+}
+
+.listItemDetailsItem:last-child {
+  border-bottom: 0;
+}
+
+.splitter {
+  height: 0;
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+  border-top: 1rem solid #434f5c;
+  border-bottom: 1rem solid #323b44;
+}
+

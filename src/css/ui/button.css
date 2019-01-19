@@ -1,0 +1,186 @@
+.button {
+  display: inline-block;
+  outline: 0 !important;
+  font-size: 21rem;
+  margin-bottom: 11rem;
+  line-height: 1;
+  padding: 12rem 13rem 13rem 13rem;
+  background-clip: padding-box;
+  border-radius: 4rem;
+  transition: all 250ms;
+  //flex: 1 0 auto;
+}
+
+.buttonSmall {
+  font-size: 18rem;
+  border-radius: 4rem;
+  padding: 7rem 9rem 6rem 9rem;
+}
+
+.buttonGroup {
+}
+
+.buttonGroup .button,
+.buttonGroup .buttonSmall {
+  margin-right: 11rem;
+}
+
+.buttonGroupLeft {
+  composes: buttonGroup;
+  justify-content: flex-start;
+}
+
+.buttonGroupRight {
+  composes: buttonGroup;
+  justify-content: flex-end;
+}
+
+.buttonActive {
+  box-shadow: inset 0 0 1.2rem 0.6rem color(#333 alpha(66%)) !important;
+}
+
+.button:hover,
+.button:focus,
+.buttonActive {
+  box-shadow: inset 0 0 1.2rem 0.6rem color(#fcfcfc alpha(88%));
+  cursor: pointer;
+}
+
+
+.buttonDefault {
+  composes: button;
+  color: #333;
+  border: solid 1rem color(#333 alpha(40%));
+  background: linear-gradient(
+    to bottom,
+    color(#ebebeb) 0%,
+    color(#ebebeb lightness(77%)) 100%
+  );
+}
+
+.buttonDefault:hover,
+.buttonDefault:focus,
+.buttonDefault:active:hover,
+.buttonDefault:active:focus{
+  color: #333;
+}
+.buttonDefaultActive,
+.buttonDefault:active {
+  color: #333;
+  background: linear-gradient(
+    to bottom,
+    color(#ebebeb lightness(88%)) 0%,
+    color(#ebebeb lightness(77%)) 100%
+  );
+}
+
+
+.buttonPrimary {
+  composes: button;
+  color: #fcfcfc;
+  border: solid 1rem color(#30AAEC lightness(33%));
+  background: linear-gradient(
+    to bottom,
+    color(#30AAEC) 0%,
+    color(#30AAEC lightness(33%)) 100%
+  );
+}
+.buttonPrimary:hover,
+.buttonPrimary:focus,
+.buttonPrimary:active:hover,
+.buttonPrimary:active:focus {
+  color: #fcfcfc;
+}
+.buttonPrimaryActive,
+.buttonPrimary:active {
+  color: #fcfcfc;
+  background: linear-gradient(
+    to bottom,
+    color(#30AAEC lightness(44%)) 0%,
+    color(#30AAEC lightness(33%)) 100%
+  );
+}
+
+
+.buttonSuccess {
+  composes: button;
+  color: #fcfcfc;
+  border: solid 1rem color(#3DBC78 lightness(33%));
+  background: linear-gradient(
+    to bottom,
+    color(#3DBC78) 0%,
+    color(#3DBC78 lightness(33%)) 100%
+  );
+}
+.buttonSuccess:hover,
+.buttonSuccess:focus,
+.buttonSuccess:active:hover,
+.buttonSuccess:active:focus{
+  color: #fcfcfc;
+}
+.buttonSuccessActive,
+.buttonSuccess:active {
+  color: #fcfcfc;
+  background: linear-gradient(
+    to bottom,
+    color(#3DBC78 lightness(44%)) 0%,
+    color(#3DBC78 lightness(33%)) 100%
+  );
+}
+
+.buttonDanger {
+  composes: button;
+  color: #fcfcfc;
+  border: solid 1rem color(#FF5929 lightness(33%));
+  background: linear-gradient(
+    to bottom,
+    color(#FF5929) 0%,
+    color(#FF5929 lightness(33%)) 100%
+  );
+}
+.buttonDanger:hover,
+.buttonDanger:focus,
+.buttonDanger:active:hover,
+.buttonDanger:active:focus {
+  color: #fcfcfc;
+}
+.buttonDangerActive,
+.buttonDanger:active {
+  color: #fcfcfc;
+  background: linear-gradient(
+    to bottom,
+    color(#FF5929 lightness(44%)) 0%,
+    color(#FF5929 lightness(33%)) 100%
+  );
+}
+
+.buttonWarning {
+  composes: button;
+  color: #fcfcfc;
+  border: solid 1rem color(#FF9D29 lightness(33%));
+  background: linear-gradient(
+    to bottom,
+    color(#FF9D29) 0%,
+    color(#FF9D29 lightness(33%)) 100%
+  );
+}
+.buttonWarning:hover,
+.buttonWarning:focus,
+.buttonWarning:active:hover,
+.buttonWarning:active:focus {
+  color: #fcfcfc;
+}
+.buttonWarningActive,
+.buttonWarning:active {
+  color: #fcfcfc;
+  background: linear-gradient(
+    to bottom,
+    color(#FF9D29 lightness(44%)) 0%,
+    color(#FF9D29 lightness(33%)) 100%
+  );
+}
+
+
+
+
+

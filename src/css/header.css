@@ -1,0 +1,40 @@
+.panel {
+  display: flex;
+  justify-content: space-between;
+  height: 60rem;
+  flex: 0 1 100%;
+}
+
+.button {
+  font-size: 24rem;
+  line-height: 1;
+  padding: 17rem;
+  cursor: pointer;
+  color: color(#fff alpha(80%));
+}
+
+.userButton {
+  composes: button;
+}
+
+.userButton :global(.menu) {
+  left: -19rem !important;
+}
+
+.userButton :global(.menu:after) {
+  left: 69% !important;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 7rem);
+  left: 17rem;
+  width: 370rem;
+  z-index: 80;
+  text-align: center;
+  font-size: 21rem;
+  padding: 18rem 22rem 18rem 22rem;
+  background: #fff;
+  color: #323b44;
+  border-radius: 4rem;
+}

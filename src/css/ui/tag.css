@@ -1,0 +1,42 @@
+
+.list {
+  font-size: 18rem;
+  margin-bottom: 17rem;
+}
+
+.listItem {
+  display: inline-block;
+  margin-right: 11rem;
+  margin-bottom: 11rem;
+  padding: 7rem 9rem 6rem 9rem;
+  line-height: 1;
+  color: #e6e6e6;
+  background: #485561;
+  border-radius: 5rem;
+}
+
+.listItem:hover,
+.listItem:focus,
+.listItem:active:hover,
+.listItem:active:focus {
+  background: #526170;
+  cursor: pointer;
+}
+
+.listItemActive {
+  composes: listItem;
+  color: #fff;
+  background: #3bafda;
+}
+
+.listItemActive:hover,
+.listItemActive:active {
+  color: #fff;
+  background: #3bafda; 
+}
+
+.listItemIcon {
+  font-size: 16rem;
+  vertical-align: 4%;
+  margin-right: 7rem;
+}

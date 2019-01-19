@@ -1,0 +1,108 @@
+.list {
+  position: absolute;
+  bottom: 21rem;
+  right: 21rem;
+  display: flex;
+}
+
+.listTopToBottom {
+  composes: list;
+  flex-direction: column;
+}
+
+.listBottomToTop {
+  composes: list;
+  flex-direction: column-reverse;
+}
+
+.emptyList {
+  text-align: center;
+  margin-bottom: 7rem;
+  padding: 26rem 13rem;
+  font-size: 100%;
+  color: color(#333 lightness(44%));
+}
+
+.item {
+  display: flex;
+  margin-bottom: 7rem;
+  padding: 7rem 13rem;
+  line-height: 20rem;
+  color: color(#fcfcfc alpha(93%));
+  background: #8e8e8e;
+  font-size: 18rem;
+  border: solid 1rem transparent;
+  border-radius: 4rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.status {
+  display: none;
+  width: 20rem;
+  height: 20rem;
+  font-size: 18rem;
+  line-height: 20rem;
+  text-align: center;
+  margin-right: 10rem;
+}
+
+.statusText {
+  display: block;
+  width: 100%;
+}
+
+.statusList {
+  margin: 0;
+  margin-top: 6rem;
+  padding-top: 3rem;
+  list-style-type: none;
+  list-style-position: inside;
+  border-top: solid 1rem color(#fcfcfc alpha(33%));
+  color: color(#fcfcfc alpha(87%));
+}
+
+.item[data-status="success"] {
+  background: #4BC785;
+  border: solid 1rem color(#4BC785 blackness(35%));
+}
+
+.item[data-status="success"] :global(.fa-check-circle) {
+  display: block;
+}
+
+.item[data-status="error"] {
+  background: #FF5929;
+  border-color: color(#FF5929 blackness(13%));
+}
+.item[data-status="error"] :global(.fa-times-circle) {
+  display: block;
+}
+
+.item[data-status="warning"] {
+  background: #FF9D29;
+  border-color: color(#FF9D29 blackness(13%));
+}
+.item[data-status="warning"] :global(.fa-warning) {
+  display: block;
+}
+
+.item[data-status="pending"] {
+  background: #4C93B9;
+  border-color: color(#4C93B9 blackness(35%));
+}
+.item[data-status="pending"] :global(.fa-refresh) {
+  display: block;
+}
+
+.item[data-status="info"] {
+  background: #4C93B9;
+  border-color: color(#4C93B9 blackness(35%));
+}
+.item[data-status="info"] :global(.fa-info-circle) {
+  display: block;
+}

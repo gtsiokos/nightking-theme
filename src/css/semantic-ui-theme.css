@@ -1,0 +1,227 @@
+:global(.ui.dimmer) {
+  padding: 13rem 13rem 13rem 13rem;
+  background: linear-gradient(to bottom, color(#36404a alpha(58%)) 0%, color(#36404a alpha(88%)) 50%, color(#323b44 alpha(77%)) 100%);
+}
+
+:global(.ui.modal) {
+  background: #36404a;
+  padding: 13rem 13rem 13rem 13rem;
+  border: solid 1rem rgba(54, 64, 74, 0.08);
+  border-radius: 4rem;
+}
+
+:global(.ui.modal>.content) {
+  font-size: 23rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+:global(.ui.modal>.actions) {
+  border: 0;
+  background: transparent;
+}
+
+:global(.ui.dropdown) {
+  font-size: 23rem;
+}
+
+:global(.ui.dropdown .menu),
+:global(.ui.simple.dropdown .menu) {
+  width: 100% !important;
+  padding: 9rem 11rem 9rem 11rem;
+  color: #323b44;
+  background: #fff;
+  font-size: 21rem;
+  border: 1rem solid transparent;
+  border-radius: 0 0 4rem 4rem;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.26)
+}
+
+:global(.ui.dropdown.pointing .menu) {
+  border-radius: 4rem;
+}
+
+:global(.ui.dropdown [class^='fa']) {
+  margin-right: 11rem;
+}
+
+:global(.ui.dropdown .menu>.item) {
+  color: #98a6ad;
+  font-size: 21rem;
+  padding: 9rem 11rem 9rem 11rem !important;
+}
+
+:global(.ui.dropdown .menu>.item [class^='fa']) {
+  margin-right: 11rem;
+}
+
+:global(.ui.dropdown .menu .active.item) {
+  font-weight: 400;
+}
+
+:global(.ui.multiple.dropdown>.label) {
+  margin: 0;
+  margin-right: 11rem;
+  margin-bottom: 11rem;
+  padding: 7rem 9rem 6rem 9rem;
+  font-size: 18rem;
+  font-weight: 400;
+  color: #e6e6e6;
+  background: #485561;
+  border-radius: 5rem;
+}
+
+:global(.ui.form .field) {
+  padding: 9rem 0 9rem 0;
+  margin-bottom: 13rem;
+}
+
+:global(.ui.form .field>label) {
+  color: #98a6ad;
+  font-size: 18rem;
+  font-weight: 400;
+  margin-bottom: 8rem;
+}
+
+:global(.ui.form .inline.field>label),
+:global(.ui.form .inline.field>p),
+:global(.ui.form .inline.fields .field>label),
+:global(.ui.form .inline.fields .field>p),
+:global(.ui.form .inline.fields>label) {
+  color: #98a6ad;
+  font-size: 18rem;
+  font-weight: 400;
+  margin-bottom: 8rem;
+}
+
+:global(.ui.form input:not([type])), 
+:global(.ui.form input[type=date]), 
+:global(.ui.form input[type=datetime-local]), 
+:global(.ui.form input[type=email]), 
+:global(.ui.form input[type=file]), 
+:global(.ui.form input[type=number]), 
+:global(.ui.form input[type=password]), 
+:global(.ui.form input[type=search]), 
+:global(.ui.form input[type=tel]), 
+:global(.ui.form input[type=text]), 
+:global(.ui.form input[type=time]), 
+:global(.ui.form input[type=url]) {
+  font-size: 18rem;
+  padding: 9rem 11rem 9rem 11rem;
+  background: #434f5c;
+  color: #fff;
+  border: 1rem solid #4c5a67;
+  border-radius: 4rem !important;
+  box-shadow: none;
+}
+
+:global(.ui.form input:not([type])):focus, 
+:global(.ui.form input[type=date]):focus, 
+:global(.ui.form input[type=datetime-local]):focus, 
+:global(.ui.form input[type=email]):focus, 
+:global(.ui.form input[type=file]):focus, 
+:global(.ui.form input[type=number]):focus, 
+:global(.ui.form input[type=password]):focus, 
+:global(.ui.form input[type=search]):focus, 
+:global(.ui.form input[type=tel]):focus, 
+:global(.ui.form input[type=text]):focus, 
+:global(.ui.form input[type=time]):focus, 
+:global(.ui.form input[type=url]):focus {
+  background: #4c5a67;
+  color: #fff;
+  border-color: #526170;
+}
+
+:global(.ui.form .field.error .input),
+:global(.ui.form .field.error label),
+:global(.ui.form .fields.error .field .input),
+:global(.ui.form .fields.error .field label) {
+  color: #98a6ad;
+}
+
+:global(.ui.form .field.error input:not([type])),
+:global(.ui.form .field.error input[type=date]),
+:global(.ui.form .field.error input[type=datetime-local]),
+:global(.ui.form .field.error input[type=email]),
+:global(.ui.form .field.error input[type=file]),
+:global(.ui.form .field.error input[type=number]),
+:global(.ui.form .field.error input[type=password]),
+:global(.ui.form .field.error input[type=search]),
+:global(.ui.form .field.error input[type=tel]),
+:global(.ui.form .field.error input[type=text]),
+:global(.ui.form .field.error input[type=time]),
+:global(.ui.form .field.error input[type=url]),
+:global(.ui.form .field.error select),
+:global(.ui.form .field.error textarea),
+:global(.ui.form .fields.error .field input:not([type])),
+:global(.ui.form .fields.error .field input[type=date]),
+:global(.ui.form .fields.error .field input[type=datetime-local]),
+:global(.ui.form .fields.error .field input[type=email]),
+:global(.ui.form .fields.error .field input[type=file]),
+:global(.ui.form .fields.error .field input[type=number]),
+:global(.ui.form .fields.error .field input[type=password]),
+:global(.ui.form .fields.error .field input[type=search]),
+:global(.ui.form .fields.error .field input[type=tel]),
+:global(.ui.form .fields.error .field input[type=text]),
+:global(.ui.form .fields.error .field input[type=time]),
+:global(.ui.form .fields.error .field input[type=url]),
+:global(.ui.form .fields.error .field select),
+:global(.ui.form .fields.error .field textarea) {
+  background: #434f5c;
+  color: #fff;
+  border-color: #ff5b5b;
+}
+
+:global(.ui.form .field.error input:not([type]):focus),
+:global(.ui.form .field.error input[type=date]:focus),
+:global(.ui.form .field.error input[type=datetime-local]:focus),
+:global(.ui.form .field.error input[type=email]:focus),
+:global(.ui.form .field.error input[type=file]:focus),
+:global(.ui.form .field.error input[type=number]:focus),
+:global(.ui.form .field.error input[type=password]:focus),
+:global(.ui.form .field.error input[type=search]:focus),
+:global(.ui.form .field.error input[type=tel]:focus),
+:global(.ui.form .field.error input[type=text]:focus),
+:global(.ui.form .field.error input[type=time]:focus),
+:global(.ui.form .field.error input[type=url]:focus),
+:global(.ui.form .field.error select:focus),
+:global(.ui.form .field.error textarea:focus) {
+  background: #4c5a67;
+  color: #fff;
+}
+
+
+
+:global(.ui.form textarea) {
+  font-size: 21rem;
+}
+
+:global(.ui.checkbox .box),
+:global(.ui.checkbox label) {
+  font-size: 18rem;
+  padding-left: 40rem;
+}
+
+:global(.ui.toggle.checkbox .box:before),
+:global(.ui.toggle.checkbox label:before) {
+  width: 28rem;
+  height: 17rem;
+  background: #434f5c;
+}
+
+:global(.ui.toggle.checkbox .box:after),
+:global(.ui.toggle.checkbox label:after) {
+  width: 17rem;
+  height: 17rem;
+}
+
+:global(.ui.toggle.checkbox input:checked~.box:before),
+:global(.ui.toggle.checkbox input:checked~label:before) {
+  background: #3bafda !important;
+}
+
+:global(.ui.toggle.checkbox input:checked~.box:after),
+:global(.ui.toggle.checkbox input:checked~label:after) {
+  left: 11rem;
+}
