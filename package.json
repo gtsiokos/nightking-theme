@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.1.0",
   "name": "nightking-theme",
   "author": "George Tsiokos <gtsiokos.fusion.design@gmail.com>",
   "description": "Demo React theme supporting tag filtering, tabs & list pagination",
